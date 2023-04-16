@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Color changer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+  <style>
+    .container{
+      height:100vh;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+     
+    }
+    
+  </style>
+</head>
+<body onmouseup="changeColors()">
+  <div class="container">
+    
+
+  
+  </div>
+  
+  
+  
+  
+<script>
+ var index=0;
+  
+  function changeColors(){
+    var colors=["deeppink",  "blue" , 'green',
+   "red","white" ,"violet","pink","seegreen", '#ccffcc',' #007399',' #990000',' #99ffff','#1a66ff',' #ff9900','#666699',' #ff3377','	 #ffff00',]
+    document.getElementsByTagName("body")[0].style.background= colors[index++];
+    
+   if (index > colors.length-1)
+   index = 0;
+    
+  }
+  
+</script>
+
+
+
+</body>
+
+</html>
